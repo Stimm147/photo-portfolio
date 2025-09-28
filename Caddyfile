@@ -1,0 +1,7 @@
+:{$PORT} {
+    reverse_proxy /api/* localhost:{$REFLEX_BACKEND_PORT}
+    reverse_proxy /_reflex/* localhost:{$REFLEX_BACKEND_PORT}
+
+    root * public
+    file_server
+}
