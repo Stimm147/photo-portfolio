@@ -52,7 +52,6 @@ def classifier_component() -> rx.Component:
                 "Klasyfikuj obraz",
                 on_click=ClassifierState.classify_image,
                 is_loading=ClassifierState.is_loading,
-                disabled=~ClassifierState.image_url,
                 width="100%",
             ),
             spacing="1",
