@@ -1,7 +1,7 @@
 import reflex as rx
 import httpx
 
-CLASSIFY_API_URL = "https://flask-api-production-0454.up.railway.app/api/stats"
+CLASSIFY_API_URL = "https://flask-api-production-0454.up.railway.app"
 
 
 class ClassifierState(rx.State):
