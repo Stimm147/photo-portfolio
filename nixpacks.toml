@@ -1,0 +1,5 @@
+[phases.build]
+cmds = ["reflex init && reflex export"]
+
+[start]
+cmd = "caddy run --config Caddyfile --adapter caddyfile"
