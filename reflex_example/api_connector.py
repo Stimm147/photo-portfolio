@@ -55,8 +55,8 @@ def classifier_component() -> rx.Component:
                 disabled=~ClassifierState.image_url,
                 width="100%",
             ),
-            spacing="1em",
-            margin_top="1em",
+            spacing="1",
+            margin_top="1",
         ),
         rx.cond(
             ClassifierState.is_loading,
@@ -64,9 +64,9 @@ def classifier_component() -> rx.Component:
                 rx.vstack(
                     rx.spinner(size="3"),
                     rx.text("Analizuję obraz..."),
-                    spacing="1em",
+                    spacing="1",
                 ),
-                margin_top="2em",
+                margin_top="2",
             ),
         ),
         rx.cond(
@@ -81,9 +81,9 @@ def classifier_component() -> rx.Component:
                         rx.text(
                             f"Pewność: {ClassifierState.result.get('confidence', 'N/A')}%"
                         ),
-                        spacing="0.5em",
+                        spacing="1",
                     ),
-                    padding="1em",
+                    padding="1",
                 ),
                 rx.cond(
                     ClassifierState.image_url,
@@ -94,8 +94,8 @@ def classifier_component() -> rx.Component:
                         border_radius="8px",
                     ),
                 ),
-                spacing="1em",
-                margin_top="2em",
+                spacing="1",
+                margin_top="2",
             ),
         ),
         rx.cond(
@@ -105,10 +105,10 @@ def classifier_component() -> rx.Component:
                 icon="alert_triangle",
                 color_scheme="red",
                 role="alert",
-                margin_top="1em",
+                margin_top="1",
             ),
         ),
-        padding="2em",
+        padding="2",
         border="1px solid #eaeaea",
         border_radius="10px",
         max_width="600px",

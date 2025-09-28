@@ -11,26 +11,26 @@ class State(rx.State):
 
 def index() -> rx.Component:
     """The main page of the app."""
-    return classifier_component
-    # return rx.container(
-    #     rx.color_mode.button(position="top-right"),
-    #     rx.vstack(
-    #         rx.heading("Welcome to Reflex!", size="9"),
-    #         rx.text(
-    #             "Get started by editing ",
-    #             rx.code(f"{config.app_name}/{config.app_name}.py"),
-    #             size="5",
-    #         ),
-    #         rx.link(
-    #             rx.button("Check out our docs!"),
-    #             href="https://reflex.dev/docs/getting-started/introduction/",
-    #             is_external=True,
-    #         ),
-    #         spacing="5",
-    #         justify="center",
-    #         min_height="83vh",
-    #     ),
-    # )
+    return rx.container(
+        # rx.color_mode.button(position="top-right"),
+        # rx.vstack(
+        #     rx.heading("Welcome to Reflex!", size="9"),
+        #     rx.text(
+        #         "Get started by editing ",
+        #         rx.code(f"{config.app_name}/{config.app_name}.py"),
+        #         size="5",
+        #     ),
+        #     rx.link(
+        #         rx.button("Check out our docs!"),
+        #         href="https://reflex.dev/docs/getting-started/introduction/",
+        #         is_external=True,
+        #     ),
+        #     spacing="5",
+        #     justify="center",
+        #     min_height="83vh",
+        # ),
+        classifier_component()
+    )
 
 
 app = rx.App(
