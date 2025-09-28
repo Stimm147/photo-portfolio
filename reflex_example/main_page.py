@@ -26,7 +26,7 @@ def index() -> rx.Component:
             ),
             spacing="5",
             justify="center",
-            min_height="85vh",
+            min_height="83vh",
         ),
     )
 
