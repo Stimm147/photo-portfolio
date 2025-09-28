@@ -5,7 +5,7 @@ api_url = os.getenv("API_URL", "http://127.0.0.1:8000")
 
 
 config = rx.Config(
-    app_name="portfolio",
+    app_name="reflex_example",
     plugins=[
         rx.plugins.SitemapPlugin(),
         rx.plugins.TailwindV4Plugin(),
@@ -13,7 +13,7 @@ config = rx.Config(
     api_url=api_url,
     cors_allowed_origins=[
         "http://localhost:3000",
-        "https://photo-portfolio-production.up.railway.app",
+        "https://frontend-copy-production-f2a9.up.railway.app",
     ],
     compile=True,
     telemetry_enabled=False,
