@@ -15,7 +15,8 @@ config = rx.Config(
     api_url=api_url,
     cors_allowed_origins=[
         "http://localhost:3000",
-        "https://frontend-copy-production-f2a9.up.railway.app",
+        "https://reflex-example-backend-production.up.railway.app",
+        "https://reflex-example-production.up.railway.app",
     ],
     compile=True,
     telemetry_enabled=False,
